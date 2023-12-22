@@ -1,5 +1,16 @@
 body {
   padding: 50px;
+  width: auto;
+  height: auto;
+}
+
+fieldset {
+  border: 0;
+
+  /* 수평중앙정렬 */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .login .top {
@@ -54,5 +65,34 @@ input[type="password"] {
 .login .top li.save label {
   position: relative;
   font-weight: normal;
+  width: auto;
   top: -3px;
+}
+
+/* btm */
+
+.login .btm {
+  padding: 0 0 0 100px;
+}
+
+.login .btm li {
+  color: #383d41;
+  font-family: dotum;
+  font-size: 11px;
+  margin-left: 10px;
+  margin-bottom: 11px;
+  line-height: 12px;
+}
+
+.login .btm li a:hover {
+  cursor: pointer;
+}
+
+.login .btm li a {
+  font-size: 11px;
+  font-family: dotum;
+  font-weight: bold;
+  color: #829c2c;
+  text-decoration: underline; 
+  margin-left: 10px;
 }

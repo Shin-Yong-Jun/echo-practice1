@@ -2,9 +2,7 @@ ul {
   list-style-type: none;
 }
 
-fieldset {
-  border: 0;
-}
+
 
 legend {
   visibility:hidden
