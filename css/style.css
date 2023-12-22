@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+}
+
+.login .top {
+  position: relative;
+  width: 329px;
+}
+
+.login .top li.btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.login .top li label {
+  font-size: 11px;
+  color: #464646;
+  font-family: dotum;
+  font-weight: bold;
+  display: inline-block;
+  width: 63px;
+}
+
+.login .top li input[type="text"],
+input[type="password"] {
+  width: 142px;
+  height: 27px;
+  padding: 0;
+  border-color: #d9d9d9;
+}
+
+.login .top li {
+  padding: 0 0 9px 0;
+}
+
+.login .top li a {
+  width: 109.67px;
+  height: 67.67px;
+  background: #829c2c;
+  display: block;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  line-height: 69px;
+  font-weight: bold;
+  border: 1px solid #778f28;
+}
+
+.login .top li.save {
+  padding: 0 0 0 59px;
+}
+
+.login .top li.save label {
+  position: relative;
+  font-weight: normal;
+  top: -3px;
+}
