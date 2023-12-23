@@ -4,12 +4,8 @@
   list-style: none;
 }
 
-body{
-  /* padding: 30px; */
-}
 
-
-ul {
+.tabMenu {
   list-style: none;
   display: flex;
   height: 60px;
