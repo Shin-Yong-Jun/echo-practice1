@@ -1,0 +1,76 @@
+fieldset form .top {
+  position: relative;
+  width: 300px;
+}
+
+fieldset form .top li {
+  width: 250px;
+}
+
+fieldset form .top li label {
+  /* display-block => a, label 과 같은 인라인 요소를 블럭으로! */
+  display: inline-block;
+  width: 60px;
+
+  font-style: dotum;
+  font-size: 12px;
+}
+
+fieldset form .top li[class="idInputLi"],
+li[class="pwInputLi"] {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+fieldset form .top li input[type="text"],
+input[type="password"] {
+  border: 2px solid #d9d9d9;
+  width: 120px;
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+fieldset form .top li .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #829c2c;
+  color: #fff;
+  text-decoration: none;
+  width: 100px;
+  height: 59px;
+  text-align: center;
+  line-height: 59px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: dotum;
+}
+
+fieldset form .top li[class="chkSave"] {
+  padding-left: 56px;
+  position: relative;
+}
+
+fieldset form .top li[class="chkSave"] label {
+  font-size: 11px;
+  position: absolute;
+  top: 3px;
+}
+
+/* ==== btm ==== */
+
+fieldset form .btm {
+  padding-left: 90px;
+  font-family: dotum;
+  font-size: 11px;
+}
+
+fieldset form .btm li {
+  padding-bottom: 5px;
+}
+
+fieldset form .btm li a {
+  color: #829c2c;
+  font-weight: bold;
+  padding-left: 10px;
+}
