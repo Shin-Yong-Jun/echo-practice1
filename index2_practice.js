@@ -7,6 +7,7 @@ let blackBtn = document.querySelector('.blackBtn');
 let whiteBtn = document.querySelector('.whiteBtn');
 
 
+
 for(let i =0; i<aElements.length; i++) {
   aElements[i].addEventListener('click', function(e) {
     e.preventDefault();
@@ -20,13 +21,87 @@ for(let i =0; i<aElements.length; i++) {
 }
 
 
-blackBtn.addEventListener('click', function() {
-  body.style.backgroundColor='black';
-});
 
-whiteBtn.addEventListener('click', function() {
+// for(let i = 0; i<aElements.length;)
+
+function switchWhite() {
   body.style.backgroundColor='white';
-});
+}
+function switchBlack() {
+  body.style.backgroundColor='black';
+}
+
+// blackBtn.addEventListener('click', () => {
+//   if(blackBtn.value==="블랙배경") {
+//     switchBlack();
+//     blackBtn.value="화이트배경";
+//   } else {
+//     switchWhite();
+//     blackBtn.value="블랙배경";
+//   }
+
+// })
+
+// console.log(aElements[0].textContent)
+
+
+//===========================================
+function blackBtnSwitchBg() {
+    if(blackBtn.value==="블랙배경") {
+        body.style.backgroundColor='black';
+        blackBtn.value="화이트배경";
+      } else {
+          body.style.backgroundColor='white';
+          blackBtn.value="블랙배경";
+      
+        }
+      }
+      
+      
+      blackBtn.addEventListener('click', () => {
+          blackBtnSwitchBg();
+        })
+        
+//===========================================
+
+
+// blackBtn.onclick = () => {
+//   if(blackBtn.value==='블랙배경') {
+//     body.style.backgroundColor='black';
+//     blackBtn.value="화이트배경";
+//   } else {
+//     body.style.backgroundColor='white';
+//     blackBtn.value="블랙배경";
+    
+//   }
+// }
+
+
+// function switchBlack(self) {
+//   if(self.value === "블랙배경") {
+//     body.style.backgroundColor='black';
+//     self.value = "화이트배경";
+//   } else {
+//     body.style.backgroundColor='white';
+//     self.value = "블랙배경";
+
+//   }
+// }
+
+
+// blackBtn.addEventListener('click', function() {
+//   if(blackBtn.value === "블랙배경") {
+//     body.style.backgroundColor='black';
+//     blackBtn.value = "화이트배경";
+// } else {
+//   body.style.backgroundColor='white';
+//   blackBtn.value="블랙배경"
+// }
+// });
+
+// whiteBtn.addEventListener('click', function() {
+//   body.style.backgroundColor='white';
+// });
 
 
 
