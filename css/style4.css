@@ -1,0 +1,87 @@
+.event_list {
+  width: 1196px;
+}
+
+.event_list ul {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+
+.event_list li {
+  flex: 0 1 25%;
+  padding: 0 0 34px;
+}
+
+.event_list li a{
+  display: block;
+  width: 271px;
+  height: 382px;
+  border: 1px solid #ddd;
+  line-height: 1;
+  position: relative;
+}
+
+.event_list li a .img{
+  width: 271px;
+  height: 272px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.event_list li a .img img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event_list li a .info {
+  padding: 29px 10px 0;
+}
+
+.event_list li a .info strong{
+  display: block;
+
+  /* 점점점 공식! */
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+
+  font-size: 18px;
+  color: #222;
+}
+
+.event_list li a p {
+  padding: 20px 0 0;
+  font-size: 13px;
+  color: #888;
+}
+
+
+.event_list li a p span {
+  font-size: 15px;
+  color: #ed2846;
+}
+
+.event_list li a em {
+  color: white;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background: rgba(0,0,0,.5);
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.paging ul {
+  display: flex;
+  justify-content: center; 
+}
