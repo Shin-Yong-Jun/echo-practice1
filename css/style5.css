@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_container .img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_container .img img{
+  display: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.main_container ul {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main_container ul li{
+  text-align: center;
+}
+
+.main_container ul li a {
+  display: inline-block;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  color: coral;
+  line-height: 30px;
+  opacity: 0.5;
+}
+
+.main_container ul li a:hover {
+  opacity: 1;
+}
