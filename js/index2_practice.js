@@ -20,8 +20,6 @@ for(let i =0; i<aElements.length; i++) {
   })
 }
 
-
-
 // for(let i = 0; i<aElements.length;)
 
 function switchWhite() {
