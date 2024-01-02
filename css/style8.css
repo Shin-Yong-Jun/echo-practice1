@@ -125,7 +125,6 @@ header .logo img {
   white-space: nowrap;
   transition: .5s;
   display: inline-block;
-  transform: translateX(0);
   
 }
 
@@ -139,10 +138,6 @@ header .logo img {
   width: 100%;  
 }
 
-.material-symbols-outlined {
-  color: white;
-  position: absolute;
-}
 
 .slide {
   position: relative;
@@ -152,18 +147,22 @@ header .logo img {
 
 .slide button {
   position: absolute;
-  background-color: rgb(255, 255, 255, .8);
+  color: white;
+  background-color: rgb(0, 0, 0, .8);
   font-size: 24px;
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   padding: 10px;
+  /* opacity: .2; */
+  border: none;
+
 }
 
 .slide button.prev {
-  left: 3%;
+  left: 2%;
 }
 .slide button.next {
-  right: -3%;
+  right: -1%;
 }
 
