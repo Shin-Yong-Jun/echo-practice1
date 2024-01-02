@@ -1,0 +1,141 @@
+@font-face {
+  font-family: abster;
+  src: url(../font/abster-webfont.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url(../images/KakaoTalk_20231001_093615614.png);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+header .logo {
+  margin-top: 5px;
+}
+
+header .logo a {
+  margin-left: 20px;
+}
+
+header .logo img {
+  width: 180px;
+}
+
+.menuList {
+  display: flex;
+}
+
+.menuList li {
+  margin-right: 20px;
+  position: relative;
+  width: 50px;
+}
+
+.menuList li:first-child::before {
+  background: none;
+}
+
+.menuList > li::before {
+  content: "";
+  width: 1px;
+  height: 15px;
+  /* background-color: white; */
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  left: -10px;
+  top: 4px;
+}
+
+.menuList li a {
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuList li a:hover {
+  color: #1fdf85;
+}
+
+.menuList li:hover ul {
+  height: 150px;
+}
+
+/* 메인메뉴 깊이1 */
+.menuList > li > ul {
+  z-index: 3;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.8);
+  top: 40px;
+  left: -10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 75px;
+  padding: 0;
+}
+
+
+.menuList > li > ul li {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.menuList > li > ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+/* 이미지 슬라이더 */
+.container {
+  border: 1px solid white;
+  height: 500px;
+  width: 100%;
+  
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide .slideImgs {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slide .slideImgs li {
+  display: inline-block;
+}
+
+
+.container input[id*="slide"] {
+  display: none;
+}
+
+.slideImgs>li>a img {
+  width: 100%;  
+}

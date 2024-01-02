@@ -58,12 +58,12 @@ header .logoA img {
   font-weight: bold;
 }
 
-.hdList li ul {
-  z-index: 2;
+.hdList>li>ul {
+  z-index: 3;
+  position: absolute;
   height: 0;
   overflow: hidden;
   list-style: none;
-  position: absolute;
   left: -8px;
   top: 43px;
   background-color: #eee;
