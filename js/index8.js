@@ -7,6 +7,7 @@ const container = document.querySelector(".container"),
 // 이미지 자동 슬라이드
 
 let currentIndex = 0;
+let intervalId = null;
 
 function autoSlide() {
   currentIndex = (currentIndex + 1) % slideImgs.children.length;
@@ -17,14 +18,19 @@ function autoSlide() {
 }
 
 container.addEventListener("mouseleave", () => {
-  IntervalId = setInterval(autoSlide, 4000);
+  if(intervalId !== null) {
+    clearInterval(intervalId);
+  }
+  intervalId = setInterval(autoSlide, 1000);
 });
 
 container.addEventListener("mouseenter", () => {
-  clearInterval(IntervalId);
+  clearInterval(intervalId);
+  intervalId = null;
 });
 
-IntervalId = setInterval(autoSlide, 4000);
+// 처음부터 자동슬라이드 작동
+intervalId=setInterval(autoSlide, 1000);
 
 // 이전 다음 버튼 클릭시 이미지 이동
 next.addEventListener("click", () => {
@@ -42,9 +48,7 @@ prev.addEventListener("click", () => {
   updateNation(currentIndex);
 });
 
-// 처음부터 자동슬라이드 작동
-// intervalId=setInterval(autoSlide, 4000);
-// autoSlide();
+
 
 //================== Nation 만들기 =======================================
 
@@ -69,7 +73,7 @@ nationNums.forEach((element) => {
 // 첫번째 순서에 active 클래스 추가
 nationNums[0].classList.add("active");
 
-// nation li 클릭시 해당 이미지로 이동
+// nation li 클릭시 해당 이미지로 이동 및 active 클래스 추가(autoSlide와 버튼 동작시 활용)
 function updateNation(currentIndex) {
   nationNums.forEach((element) => {
     element.classList.remove("active");
